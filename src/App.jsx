@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../ChatGPT Image Apr 22, 2026, 02_30_17 PM.png";
+import logo from "../logo.png";
 import badgeBlue from "../BadgeBlue.png";
 import cheers from "../CHEERS.png";
 
