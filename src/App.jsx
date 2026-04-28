@@ -1,42 +1,112 @@
 import React from "react";
+
 export default function App() {
   return (
-    <main style={{ fontFamily: "Arial, sans-serif", padding: "40px", maxWidth: "900px", margin: "0 auto" }}>
-      <h1>Airtight Testing</h1>
-      <h2>Certified Energy Code Compliance Rater</h2>
+    <main style={{ fontFamily: "Arial, sans-serif", margin: 0, color: "#111827" }}>
+      <section style={{
+        background: "linear-gradient(135deg, #0f172a, #0b4ea2)",
+        color: "white",
+        padding: "70px 24px",
+        textAlign: "center"
+      }}>
+        <h1 style={{ fontSize: "48px", margin: 0, fontWeight: 900 }}>
+          Airtight Testing
+        </h1>
+        <h2 style={{ fontSize: "24px", marginTop: "12px", color: "#bfdbfe" }}>
+          Certified Energy Code Compliance Rater
+        </h2>
+        <p style={{ fontSize: "18px", maxWidth: "700px", margin: "24px auto" }}>
+          Title 24 compliance support, HERS field verification, and inspection coordination
+          for builders, contractors, and homeowners.
+        </p>
+        <a href="tel:8054719629">
+          <button style={{
+            background: "#ffffff",
+            color: "#0b4ea2",
+            padding: "14px 24px",
+            border: "none",
+            borderRadius: "10px",
+            fontWeight: "bold",
+            fontSize: "16px",
+            cursor: "pointer"
+          }}>
+            Call Now: (805) 471-9629
+          </button>
+        </a>
+      </section>
 
-      <p>Serving Santa Barbara, San Luis Obispo, and Monterey Counties.</p>
+      <section style={{ padding: "50px 24px", maxWidth: "1100px", margin: "auto" }}>
+        <h2 style={{ fontSize: "32px", textAlign: "center" }}>Services</h2>
 
-      <hr />
+        <div style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
+          gap: "20px",
+          marginTop: "30px"
+        }}>
+          {[
+            "Title 24 Energy Code Compliance",
+            "HERS Field Verification",
+            "Energy Code Compliance Documentation",
+            "Duct Testing Coordination"
+          ].map((service) => (
+            <div key={service} style={{
+              padding: "24px",
+              borderRadius: "14px",
+              background: "#f8fafc",
+              border: "1px solid #e5e7eb",
+              boxShadow: "0 4px 12px rgba(0,0,0,0.06)"
+            }}>
+              <h3 style={{ marginTop: 0 }}>{service}</h3>
+              <p style={{ color: "#4b5563" }}>
+                Reliable compliance support to help keep projects moving toward approval.
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
 
-      <h2>Services</h2>
-      <ul>
-        <li>Title 24 Energy Code Compliance</li>
-        <li>HERS Field Verification</li>
-        <li>Energy Code Compliance Documentation</li>
-        <li>Duct Testing Coordination</li>
-      </ul>
+      <section style={{ background: "#f1f5f9", padding: "50px 24px" }}>
+        <div style={{ maxWidth: "900px", margin: "auto" }}>
+          <h2>Mission Statement</h2>
+          <p style={{ fontSize: "18px", lineHeight: 1.7 }}>
+            Our mission is to set the standard in energy code compliance by providing
+            accurate, dependable verification services that help projects meet California
+            Title 24 requirements with confidence.
+          </p>
+        </div>
+      </section>
 
-      <hr />
+      <section style={{ padding: "50px 24px", maxWidth: "900px", margin: "auto" }}>
+        <h2>Request an Inspection</h2>
+        <p><strong>Serving:</strong> Santa Barbara, San Luis Obispo, and Monterey Counties</p>
+        <p><strong>Phone:</strong> (805) 471-9629</p>
+        <p><strong>Email:</strong> thewv8@gmail.com</p>
 
-      <h2>About</h2>
-      <p>
-        Airtight Testing provides accurate and dependable energy code compliance
-        verification services. Our goal is to help builders and contractors meet
-        California Title 24 requirements efficiently and with confidence.
-      </p>
+        <a href="mailto:thewv8@gmail.com?subject=Request%20for%20Inspection&body=Name:%0ACompany:%0APhone:%0AProject%20Address:%0AInspection%20Needed:%0APreferred%20Date:%0ANotes:">
+          <button style={{
+            background: "#0b4ea2",
+            color: "white",
+            padding: "14px 24px",
+            border: "none",
+            borderRadius: "10px",
+            fontWeight: "bold",
+            fontSize: "16px",
+            cursor: "pointer"
+          }}>
+            Request Inspection
+          </button>
+        </a>
+      </section>
 
-      <hr />
-
-      <h2>Request an Inspection</h2>
-      <p>Phone: (805) 471-9629</p>
-      <p>Email: thewv8@gmail.com</p>
-
-      <a href="mailto:thewv8@gmail.com">
-        <button style={{ padding: "12px 18px", fontWeight: "bold" }}>
-          Request Inspection
-        </button>
-      </a>
+      <footer style={{
+        background: "#0f172a",
+        color: "white",
+        textAlign: "center",
+        padding: "24px"
+      }}>
+        © 2026 Airtight Testing | Certified Energy Code Compliance Rater
+      </footer>
     </main>
   );
 }
