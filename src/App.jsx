@@ -1,6 +1,6 @@
 export default function App() {
   return (
-    <main style={{ fontFamily: "Arial, sans-serif", padding: "40px", maxWidth: "900px", margin: "0 auto" }}>
+   <main style={{ fontFamily: "Arial, sans-serif", padding: "40px", maxWidth: "900px", margin: "0 auto" }}>
       <h1>Airtight Testing</h1>
       <h2>Certified Energy Code Compliance Rater</h2>
 
