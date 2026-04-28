@@ -59,40 +59,58 @@ export default function App() {
         </a>
       </section>
 
-      <section style={{ padding: "40px 24px", textAlign: "center" }}>
-        <h3 style={{ fontSize: "22px", color: "#374151" }}>
-          Certified & Trusted
-        </h3>
+ <section style={{ padding: "50px 20px", textAlign: "center" }}>
+  <h3 style={{ fontSize: "22px", color: "#374151", marginBottom: "20px" }}>
+    Certified & Trusted
+  </h3>
 
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "40px",
-            marginTop: "24px",
-            flexWrap: "wrap",
-          }}
-        >
-          <img
-            src={badgeBlue}
-            alt="Certification Badge"
-            style={{
-              height: "250px",
-              filter: "drop-shadow(0px 4px 10px rgba(0,0,0,0.2))",
-            }}
-          />
+  <div
+    style={{
+      display: "flex",
+      justifyContent: "center",
+      gap: "50px",
+      flexWrap: "wrap",
+    }}
+  >
+    <div
+      style={{
+        background: "white",
+        padding: "20px",
+        borderRadius: "12px",
+        boxShadow: "0 8px 20px rgba(0,0,0,0.08)",
+        textAlign: "center",
+      }}
+    >
+      <img
+        src={badgeBlue}
+        alt="Certification Badge"
+        style={{ height: "200px", marginBottom: "10px" }}
+      />
+      <p style={{ fontWeight: "600", fontSize: "14px" }}>
+        Certified Energy Compliance
+      </p>
+    </div>
 
-          <img
-            src={cheers}
-            alt="CHEERS Badge"
-            style={{
-              height: "250px",
-              filter: "drop-shadow(0px 4px 10px rgba(0,0,0,0.2))",
-            }}
-          />
-        </div>
-      </section>
+    <div
+      style={{
+        background: "white",
+        padding: "20px",
+        borderRadius: "12px",
+        boxShadow: "0 8px 20px rgba(0,0,0,0.08)",
+        textAlign: "center",
+      }}
+    >
+      <img
+        src={cheers}
+        alt="CHEERS Certified"
+        style={{ height: "220px", marginBottom: "10px" }}
+      />
+      <p style={{ fontWeight: "600", fontSize: "14px" }}>
+        CHEERS Registered Provider
+      </p>
+    </div>
+  </div>
+</section>
 
       <section style={{ padding: "50px 24px", maxWidth: "1100px", margin: "auto" }}>
         <h2 style={{ fontSize: "32px", textAlign: "center" }}>Services</h2>
