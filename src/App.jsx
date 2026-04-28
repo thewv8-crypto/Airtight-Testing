@@ -78,7 +78,7 @@ export default function App() {
             src={badgeBlue}
             alt="Certification Badge"
             style={{
-              height: "180px",
+              height: "250px",
               filter: "drop-shadow(0px 4px 10px rgba(0,0,0,0.2))",
             }}
           />
@@ -87,7 +87,7 @@ export default function App() {
             src={cheers}
             alt="CHEERS Badge"
             style={{
-              height: "180px",
+              height: "250px",
               filter: "drop-shadow(0px 4px 10px rgba(0,0,0,0.2))",
             }}
           />
