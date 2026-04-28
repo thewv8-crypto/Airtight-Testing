@@ -1,4 +1,7 @@
 import React from "react";
+import logo from "../ChatGPT Image Apr 22, 2026, 02_30_17 PM.png";
+import badgeBlue from "../BadgeBlue.png";
+import cheers from "../CHEERS.png";
 
 export default function App() {
   return (
@@ -9,6 +12,15 @@ export default function App() {
         padding: "70px 24px",
         textAlign: "center"
       }}>
+        <img
+  src={logo}
+  alt="Airtight Testing Logo"
+  style={{
+    width: "180px",
+    maxWidth: "80%",
+    marginBottom: "20px"
+  }}
+/>
         <h1 style={{ fontSize: "48px", margin: 0, fontWeight: 900 }}>
           Airtight Testing
         </h1>
@@ -34,7 +46,16 @@ export default function App() {
           </button>
         </a>
       </section>
-
+<div style={{
+  display: "flex",
+  justifyContent: "center",
+  gap: "20px",
+  marginTop: "30px",
+  flexWrap: "wrap"
+}}>
+  <img src={badgeBlue} alt="Badge" style={{ height: "70px" }} />
+  <img src={cheers} alt="CHEERS Badge" style={{ height: "70px" }} />
+</div>
       <section style={{ padding: "50px 24px", maxWidth: "1100px", margin: "auto" }}>
         <h2 style={{ fontSize: "32px", textAlign: "center" }}>Services</h2>
 
