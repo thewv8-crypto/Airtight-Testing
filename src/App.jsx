@@ -1,6 +1,6 @@
 export default function App() {
   return (
-   <main style={{ fontFamily: "Arial, sans-serif", padding: "40px", maxWidth: "900px", margin: "0 auto" }}>
+    <main style={{ fontFamily: "Arial, sans-serif", padding: "40px", maxWidth: "900px", margin: "0 auto" }}>
       <h1>Airtight Testing</h1>
       <h2>Certified Energy Code Compliance Rater</h2>
 
@@ -31,7 +31,7 @@ export default function App() {
       <p>Phone: (805) 471-9629</p>
       <p>Email: thewv8@gmail.com</p>
 
-      <a href="mailto:thewv8@gmail.com?subject=Request%20for%20Inspection">
+      <a href="mailto:thewv8@gmail.com">
         <button style={{ padding: "12px 18px", fontWeight: "bold" }}>
           Request Inspection
         </button>
