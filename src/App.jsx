@@ -46,6 +46,43 @@ export default function App() {
           </button>
         </a>
       </section>
+      <h3 style={{
+  textAlign: "center",
+  marginTop: "40px",
+  fontSize: "18px",
+  color: "#555"
+}}>
+  Certified & Trusted
+</h3>
+
+<div style={{
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  gap: "40px",
+  marginTop: "20px",
+  marginBottom: "40px"
+}}>
+
+  <img
+    src={badgeBlue}
+    alt="CHEERS Certified"
+    style={{
+      height: "110px",
+      filter: "drop-shadow(0px 4px 10px rgba(0,0,0,0.2))"
+    }}
+  />
+
+  <img
+    src={cheers}
+    alt="Certification Badge"
+    style={{
+      height: "110px",
+      filter: "drop-shadow(0px 4px 10px rgba(0,0,0,0.2))"
+    }}
+  />
+
+</div>
 <div style={{
   display: "flex",
   justifyContent: "center",
