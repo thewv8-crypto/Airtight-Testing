@@ -1,3 +1,4 @@
+import React from "react";
 export default function App() {
   return (
     <main style={{ fontFamily: "Arial, sans-serif", padding: "40px", maxWidth: "900px", margin: "0 auto" }}>
