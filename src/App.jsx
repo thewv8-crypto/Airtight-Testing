@@ -123,26 +123,38 @@ export default function App() {
             marginTop: "30px",
           }}
         >
-          {[
-            "Title 24 Energy Code Compliance",
-            "HERS Field Verification",
-            "Energy Code Compliance Documentation",
-            "Duct Testing Coordination",
-          ].map((service) => (
-            <div
-              key={service}
-              style={{
-                padding: "24px",
-                borderRadius: "14px",
-                background: "#f8fafc",
-                border: "1px solid #e5e7eb",
-                boxShadow: "0 4px 12px rgba(0,0,0,0.06)",
-              }}
-            >
-              <h3 style={{ marginTop: 0 }}>{service}</h3>
-              <p style={{ color: "#4b5563" }}>
-                Reliable compliance support to help keep projects moving toward approval.
-              </p>
+        {[
+  {
+    title: "Title 24 Energy Code Compliance",
+    desc: "Comprehensive Title 24 compliance services ensuring your project meets California energy code requirements from start to finish.",
+  },
+  {
+    title: "HERS Field Verification",
+    desc: "Certified HERS field verification including onsite inspections and testing to validate energy efficiency compliance.",
+  },
+  {
+    title: "Energy Code Compliance Documentation",
+    desc: "Accurate energy compliance documentation prepared and submitted to meet California Title 24 requirements.",
+  },
+  {
+    title: "Duct Testing Coordination",
+    desc: "Duct leakage testing and coordination to ensure HVAC systems meet required efficiency and compliance standards.",
+  },
+].map((service) => (
+  <div
+    key={service.title}
+    style={{
+      padding: "24px",
+      borderRadius: "14px",
+      background: "#f8fafc",
+      border: "1px solid #e5e7eb",
+      boxShadow: "0 4px 12px rgba(0,0,0,0.06)",
+    }}
+  >
+    <h3 style={{ marginTop: 0 }}>{service.title}</h3>
+    <p style={{ color: "#4b5563" }}>{service.desc}</p>
+  </div>
+))}
             </div>
           ))}
         </div>
