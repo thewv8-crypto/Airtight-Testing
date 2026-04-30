@@ -112,64 +112,51 @@ export default function App() {
   </div>
 </section>
 
-      <section style={{ padding: "50px 24px", maxWidth: "1100px", margin: "auto" }}>
-        <h2 style={{ fontSize: "32px", textAlign: "center" }}>Services</h2>
+  <section style={{ padding: "50px 24px", maxWidth: "1100px", margin: "auto" }}>
+  <h2 style={{ fontSize: "32px", textAlign: "center" }}>Services</h2>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
-            gap: "20px",
-            marginTop: "30px",
-          }}
-        >
-        {[
-  {
-    title: "Title 24 Energy Code Compliance",
-    desc: "Comprehensive Title 24 compliance services ensuring your project meets California energy code requirements from start to finish.",
-  },
-  {
-    title: "HERS Field Verification",
-    desc: "Certified HERS field verification including onsite inspections and testing to validate energy efficiency compliance.",
-  },
-  {
-    title: "Energy Code Compliance Documentation",
-    desc: "Accurate energy compliance documentation prepared and submitted to meet California Title 24 requirements.",
-  },
-  {
-    title: "Duct Testing Coordination",
-    desc: "Duct leakage testing and coordination to ensure HVAC systems meet required efficiency and compliance standards.",
-  },
-].map((service) => (
   <div
-    key={service.title}
     style={{
-      padding: "24px",
-      borderRadius: "14px",
-      background: "#f8fafc",
-      border: "1px solid #e5e7eb",
-      boxShadow: "0 4px 12px rgba(0,0,0,0.06)",
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
+      gap: "20px",
+      marginTop: "30px",
     }}
   >
-    <h3 style={{ marginTop: 0 }}>{service.title}</h3>
-<p style={{ color: "#4b5563" }}>{service.desc}</p>
+    {[
+      {
+        title: "Title 24 Energy Code Compliance",
+        desc: "Comprehensive Title 24 compliance services ensuring your project meets California energy code requirements from start to finish.",
+      },
+      {
+        title: "HERS Field Verification",
+        desc: "Certified HERS field verification including onsite inspections and testing to validate energy efficiency compliance.",
+      },
+      {
+        title: "Energy Code Compliance Documentation",
+        desc: "Accurate energy compliance documentation prepared and submitted to meet California Title 24 requirements.",
+      },
+      {
+        title: "Duct Testing Coordination",
+        desc: "Duct leakage testing and coordination to ensure HVAC systems meet required efficiency and compliance standards.",
+      },
+    ].map((service) => (
+      <div
+        key={service.title}
+        style={{
+          padding: "24px",
+          borderRadius: "14px",
+          background: "#f8fafc",
+          border: "1px solid #e5e7eb",
+          boxShadow: "0 4px 12px rgba(0,0,0,0.06)",
+        }}
+      >
+        <h3 style={{ marginTop: 0 }}>{service.title}</h3>
+        <p style={{ color: "#4b5563" }}>{service.desc}</p>
+      </div>
+    ))}
   </div>
-))}
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section style={{ background: "#f1f5f9", padding: "50px 24px" }}>
-        <div style={{ maxWidth: "900px", margin: "auto" }}>
-          <h2>Mission Statement</h2>
-          <p style={{ fontSize: "18px", lineHeight: 1.7 }}>
-            Our mission is to set the standard in energy code compliance by providing
-            accurate, dependable verification services that help projects meet California
-            Title 24 requirements with confidence.
-          </p>
-        </div>
-      </section>
+</section>
 
       <section style={{ padding: "50px 24px", maxWidth: "900px", margin: "auto" }}>
         <h2>Request an Inspection</h2>
