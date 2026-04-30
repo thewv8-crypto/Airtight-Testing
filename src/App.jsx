@@ -152,7 +152,7 @@ export default function App() {
     }}
   >
     <h3 style={{ marginTop: 0 }}>{service.title}</h3>
-    <p style={{ color: "#4b5563" }}>{service.desc}</p>
+<p style={{ color: "#4b5563" }}>{service.desc}</p>
   </div>
 ))}
             </div>
